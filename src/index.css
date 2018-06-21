@@ -1,0 +1,76 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.interface-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 64px;
+  height: 64px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 64px;
+}
+
+.output {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 64px;
+  height: 64px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: right;
+}
+
+.w-1 {
+  width: 64px;
+}
+
+.w-2 {
+  width: 127px;
+}
+
+.w-3 {
+  width: 190px;
+}
+
+.w-4 {
+  width: 251px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: row;
+}
