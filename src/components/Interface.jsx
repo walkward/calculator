@@ -48,7 +48,7 @@ export default class Interface extends React.Component {
   handleButtonClick(i) {
     let output = Number(`${this.state.outputValue}${i}`);
 
-    if (this.state.outputValue === 0) output = i; // Prevent leading 0's
+    if (this.state.outputValue === 0) output = i; // Prevent leading zeroes
     if (this.state.clearNext) output = i;
     if (this.state.decimalNext) output = Number(`${this.state.outputValue}.${i}`);
 
