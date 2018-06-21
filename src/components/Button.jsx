@@ -11,7 +11,7 @@ export default function Button(props) {
 
 Button.defaultProps = {
   width: 1,
-  bg: 'white',
+  bg: '#f9f9f9',
 };
 
 Button.propTypes = {
