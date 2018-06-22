@@ -1,5 +1,4 @@
-import formatNumber from '../utils/formatNumber';
-import calculate from '../utils/calculate';
+import { formatNumber, calculate } from '../utils';
 
 const defaults = {
   value: '0',
@@ -8,7 +7,7 @@ const defaults = {
   clearNext: false,
 };
 
-const display = (state = defaults, action) => {
+export default (state = defaults, action) => {
   switch (action.inputType) {
     case 'numeric':
       return {
@@ -42,5 +41,3 @@ const display = (state = defaults, action) => {
       return state;
   }
 };
-
-export default display;

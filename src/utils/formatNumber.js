@@ -7,5 +7,8 @@ export default (...numbers) => {
   // Remove multiple decimals
   if (/\..*\./.test(val)) val = val.replace(/\.(?!.*\.)/, '');
 
+  // Prevent leading decimals '0.3' vs '.3'
+  if (/^\./.test(val)) val = `0${val}`;
+
   return val;
 };

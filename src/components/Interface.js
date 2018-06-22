@@ -1,16 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Button from './Button';
-
-const renderButton = (value, inputType, handleInput, width) => (<Button
-  value={value}
-  width={width}
-  inputType={inputType}
-  onClick={() => handleInput(value, inputType)}
-/>);
-
-const Interface = ({ handleInput }) => (
+const Interface = ({ handleInput, renderButton }) => (
   <div>
     <div className="interface-row">
       {renderButton('clear', 'clear', handleInput, 3)}
@@ -44,6 +35,7 @@ const Interface = ({ handleInput }) => (
 
 Interface.propTypes = {
   handleInput: PropTypes.func.isRequired,
+  renderButton: PropTypes.func.isRequired,
 };
 
 export default Interface;
