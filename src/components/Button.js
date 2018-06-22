@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Button(props) {
-  return (
-    <button className={`square w-${props.width}`} style={{ background: props.bg }} onClick={props.onClick}>
-      {props.value}
-    </button>
-  );
-}
+const Button = props => (
+  <button className={`square w-${props.width}`} style={{ background: props.bg }} onClick={props.onClick}>
+    {props.value}
+  </button>
+);
 
 Button.defaultProps = {
   width: 1,
@@ -23,3 +21,5 @@ Button.propTypes = {
     PropTypes.number,
   ]).isRequired,
 };
+
+export default Button;
